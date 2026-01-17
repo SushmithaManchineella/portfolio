@@ -1,38 +1,107 @@
-.App {
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #f5f7fb;
+  color: #333;
+}
+
+.app section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 70px 40px;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #6f7178, #6b696e);
+  color: white;
+  border-radius: 25px;
+  margin-top: 30px;
+}
+
+.hero img {
+  width: 240px;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.cta-btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: #37363b;
+  padding: 12px 30px;
+  border-radius: 30px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* SKILLS */
+.skills {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.skill-tags span {
+  display: inline-block;
+  background: #37363b;
   color: white;
+  padding: 10px 18px;
+  margin: 6px;
+  border-radius: 25px;
 }
 
-.App-link {
-  color: #61dafb;
+/* EXPERIENCE */
+.exp-card {
+  background: white;
+  border-radius: 20px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.org {
+  color: #ff7a18;
+  font-weight: bold;
+}
+
+.date {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* PROJECTS */
+.projects {
+  background: #eef1ff;
+  border-radius: 25px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.project-card {
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+.client {
+  color: #667eea;
+  font-weight: bold;
+}
+
+/* CONTACT */
+.contact {
+  text-align: center;
 }
